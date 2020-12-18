@@ -3,11 +3,12 @@ import { View, TouchableWithoutFeedback, Text, TextInput } from "react-native";
 import tw from "tailwind-rn";
 
 const OrderDataInput = ({
-  label,
+  dataName,
   value,
   onChangeText,
   containerStyle,
   labelStyle,
+  dataNameStyle,
   inputStyle,
 }) => {
   const textInputRef = useRef();
@@ -15,7 +16,9 @@ const OrderDataInput = ({
   return (
     <TouchableWithoutFeedback onPress={() => textInputRef.current?.focus()}>
       <View style={[tw("flex-row items-center"), containerStyle]}>
-        <Text style={[tw("flex-1 text-base"), labelStyle]}>{label}</Text>
+        <Text style={[tw("flex-1 text-base"), labelStyle]}>
+          # <Text style={[tw("font-bold"), dataNameStyle]}>{dataName}</Text>:
+        </Text>
         <TextInput
           ref={textInputRef}
           style={[

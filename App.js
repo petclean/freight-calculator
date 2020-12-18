@@ -70,13 +70,13 @@ const App = () => {
         >
           <View style={tw("min-w-full bg-white p-5 rounded-lg")}>
             <OrderDataInput
-              label="# Refils:"
+              dataName="Refils"
               value={refils}
               onChangeText={setRefils}
               containerStyle={tw("mb-4")}
             />
             <OrderDataInput
-              label="# Dispensers:"
+              dataName="Dispensers"
               value={dispensers}
               onChangeText={setDispensers}
             />
