@@ -16,6 +16,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
+      "bundleIdentifier": "br.com.meupetclean.freight-calculator",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
